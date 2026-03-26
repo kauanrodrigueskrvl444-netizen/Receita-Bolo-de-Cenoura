@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: linear-gradient(135deg, #0b3c5d, #1e3c72, #4da3ff);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white
+}
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+.logo img {
+    width: 40px;
+    height: auto;
+    display: block;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+ nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+ }
+
+ .login {
+    background-color: #4da3ff;
+    border: none;
+    padding: 6px 16px;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    margin-left: 10px;
+ }
+
+ .logo image{
+    width: 40px;
+    height: auto;
+    display: block;
+ }
+ /* HERO */
+ .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centraliza verticalmente */
+    padding: 80px 60px;
+ }
+ /* TEXTO */
+  .text h1 {
+    font-size: 48px;
+  }
+
+  .text span {
+    color: #4da3ff;
+  }
+   .text h2 {
+    margin-top: 15px;
+    font-weight: normal;
+   }
+    .text p {
+        margin: 20px 0;
+        max-width: 400px;
+        color: #ccc;
+    }
+     .btn {
+        background: #4da3ff;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 10px;
+        color: white;
+     }
+     
+     /* CARD (lado direito) */
+     .card {
+        width: 280px;
+        height: 420px;
+        background: linear-gradient(180deg, #3aa0ff, #0b3c5d);
+        border-radius: 30px;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: white;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        text-align: center;
+     }
+     .card h3 {
+        font-weight: bold;
+        font-size: 24px;
+     }
+
+     .card button {
+        background: white;
+        color: #0b3c5d;
+        padding: 10px;
+        border-radius: 20px;
+        border: none;
+        font-weight: 600;
+        cursor: pointer;
+     }
+     @media (max-width: 800px) {
+  .hero {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+  }
+}
